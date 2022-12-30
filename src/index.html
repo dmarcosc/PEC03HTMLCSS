@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
+<html>    
+  <head>   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <script src="https://kit.fontawesome.com/79a25669cc.js" crossorigin="anonymous"></script>
+    <title>Smells like Cobain</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+    <section class="grid justify-center items-center text-center home" href="#home"> 
+      <img class="object-cover band" src="assets/images/nirvana-wp.jpg" alt="band-photo">
+      <div class="home__grid">
+        <h1 class="text-center self-center home__title">Smells</h1>
+        <img class="object-cover grid__img" src="assets/images/smells.jpg" alt="band-photo">
+        <img class="object-cover grid__img" src="assets/images/like.jpg" alt="band-photo">
+        <h1 class="text-center self-center home__title-highlight">Like</h1>
+        <h1 class="text-center self-center home__title">Cobain</h1>
+        <img class="object-cover grid__img" src="assets/images/cobain.jpg" alt="band-photo">
+      </div>
+      <p>Nirvana tribute band named after one of their most famous songs <i>"Smells like teen spirit"</i>.</p>
+    </section>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

@@ -1,0 +1,29 @@
+.nav{
+    z-index: 99;
+    background-color: $secondary-color;
+    color: $highlight-color;
+    justify-content: flex-end;
+    align-items: center;
+      &__container{
+        list-style: none;
+        gap: 10px;
+      }
+  }
+
+  .nav-link{
+    &:visited,&:link {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .nav {
+      font-size: 12px;
+      height: 60px;
+    }
+    .home-logo{
+      height: 35px;
+    }
+  }
