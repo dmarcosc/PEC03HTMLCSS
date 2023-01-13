@@ -11,36 +11,28 @@
   <body>
     <include src="./views/header.html"></include>
     <section class="members" href="#members">
-        <h1>Members</h1>
+        <h1 class="text-red-700 text-center m-5 text-4xl">Members</h1>
         <div class="flex flex-wrap justify-center items-center text-center members__grid">
-            <div class="mb-2 flex flex-col members__grid-card"> 
-                <img src="assets/images/kurt.jpg" class="object-cover object-top member__image" alt="member1">
-                <div class="card__body"> 
-                    <h3>Burt Cobain</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                </div>
-            </div>
-            <div class="mb-2 flex flex-col members__grid-card"> 
-                <img src="assets/images/dave.jpg" class="object-cover object-top member__image" alt="member2">
-                <div class="card__body"> 
-                    <h3>Grave Grohl</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                </div>
-            </div>
-            <div class="mb-2 flex flex-col members__grid-card"> 
-                <img src="assets/images/kris.jpg" class="object-cover object-top member__image" alt="member3">
-                <div class="card__body"> 
-                    <h3>Cris Novoselic</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                </div>
-            </div>
-            <div class="mb-2 flex flex-col members__grid-card"> 
-                <img src="assets/images/bart.jpg" class="object-cover object-top member__image" alt="member4">
-                <div class="card__body"> 
-                    <h3>John Doe</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                </div>
-            </div>
+            <include src="components/card.html" locals='{
+                "title": "Burt Cobain",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/kurt.jpg"
+            }'></include>
+            <include src="components/card.html" locals='{
+                "title": "Grave Grohl",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/dave.jpg"
+            }'></include>
+            <include src="components/card.html" locals='{
+                "title": "Cris Novoselic",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/kris.jpg"
+            }'></include>
+            <include src="components/card.html" locals='{
+                "title": "John Doe",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+                "url": "assets/images/bart.jpg"
+            }'></include>
         </div>   
     </section>
     <include src="./views/footer.html"></include>

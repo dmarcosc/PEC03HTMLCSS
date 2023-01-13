@@ -30,6 +30,15 @@
  @tailwind base;
  @tailwind components;
  @tailwind utilities;
+
+ @layer components {
+    .main__card {
+      @apply mb-2 flex flex-col members__grid-card;
+    }
+    .link__nav {
+        @apply hover:text-white no-underline nav-link;
+      }
+  }
 /**
  * Do NOT include anything else in this file!
  */

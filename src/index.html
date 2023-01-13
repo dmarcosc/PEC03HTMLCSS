@@ -14,11 +14,20 @@
       <img class="object-cover band" src="assets/images/nirvana-wp.jpg" alt="band-photo">
       <div class="home__grid">
         <h1 class="text-center self-center home__title">Smells</h1>
-        <img class="object-cover grid__img" src="assets/images/smells.jpg" alt="band-photo">
-        <img class="object-cover grid__img" src="assets/images/like.jpg" alt="band-photo">
+        <include src="components/image.html" locals='{
+          "alt": "creepy cobain",
+          "url": "assets/images/smells.jpg"
+      }'></include>
+      <include src="components/image.html" locals='{
+        "alt": "cobain pistol",
+        "url": "assets/images/like.jpg"
+    }'></include>
         <h1 class="text-center self-center home__title-highlight">Like</h1>
         <h1 class="text-center self-center home__title">Cobain</h1>
-        <img class="object-cover grid__img" src="assets/images/cobain.jpg" alt="band-photo">
+        <include src="components/image.html" locals='{
+          "alt": "cobain laughing",
+          "url": "assets/images/cobain.jpg"
+      }'></include>
       </div>
       <p>Nirvana tribute band named after one of their most famous songs <i>"Smells like teen spirit"</i>.</p>
     </section>
