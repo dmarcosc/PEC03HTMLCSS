@@ -8,12 +8,12 @@
     <script src="https://kit.fontawesome.com/79a25669cc.js" crossorigin="anonymous"></script>
     <title>Smells like Cobain</title>
   </head>
-  <body>
+  <body class="bg-bg-color text-secondary-color h-screen m-0 p-0 text-base leading-6 font-family:sanss box-border">
     <include src="./views/header.html"></include>
-    <section class="grid justify-center items-center text-center home" href="#home"> 
-      <img class="object-cover band" src="assets/images/nirvana-wp.jpg" alt="band-photo">
-      <div class="home__grid">
-        <h1 class="text-center self-center home__title">Smells</h1>
+    <section class="grid justify-center items-center text-center gap-6 px-0 py-7" href="#home"> 
+      <img class="object-cover mt-40 max-h-100 band" src="assets/images/nirvana-wp.jpg" alt="band-photo">
+      <div class="grid grid-cols-2 grid-rows-3 gap-0">
+        <h1 class="text-center self-center text-4xl text-primary-color">Smells</h1>
         <include src="components/image.html" locals='{
           "alt": "creepy cobain",
           "url": "assets/images/smells.jpg"
@@ -22,8 +22,8 @@
         "alt": "cobain pistol",
         "url": "assets/images/like.jpg"
     }'></include>
-        <h1 class="text-center self-center home__title-highlight">Like</h1>
-        <h1 class="text-center self-center home__title">Cobain</h1>
+        <h1 class="text-center self-center text-4xl text-highlight-color">Like</h1>
+        <h1 class="text-center self-center text-4xl text-primary-color">Cobain</h1>
         <include src="components/image.html" locals='{
           "alt": "cobain laughing",
           "url": "assets/images/cobain.jpg"
